@@ -1,0 +1,38 @@
+version: '3'
+
+services:
+  db:
+    image: mysql:5.7
+    environment:
+      MYSQL_ROOT_PASSWORD: 1234
+      MYSQL_DATABASE: devops_cloud
+      MYSQL_USER: admin
+      MYSQL_PASSWORD: 1234
+    volumes:
+      - ./my-data:/var/lib/mysql
+    ports:
+      - "9906:3306"
+    networks:
+      - webproje
+  
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: php_web
+    depends_on:
+      - db
+    environment:
+      - PASSWD=1234
+    volumes:
+      - ./webproje/:/var/www/html/
+    ports:
+      - "8100:80"
+    stdin_open: true
+    tty: true
+    networks:
+      - webproje
+
+networks:
+  webproje:
+    driver: bridge

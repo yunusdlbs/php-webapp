@@ -1,0 +1,87 @@
+table {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: small;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+table a {
+  background-color: #527df1;
+  padding: 10px;
+  display: block;
+  line-height: 1.2em;
+  text-decoration: none;
+  color: #000;
+  border-radius: 10px;
+}
+
+table a:hover {
+  background-color: #be6805;
+  border-radius: 5px;
+  color: #fff;
+}
+
+th,
+td {
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+th {
+  background-color: #222;
+  color: #fff;
+}
+
+td {
+  color: #000;
+}
+
+table form {
+  background-color: #527df1;
+  padding: 10px;
+  display: block;
+  line-height: 1.2em;
+  text-decoration: none;
+  color: #000;
+  border-radius: 10px;
+}
+
+.tabloduzenle td {
+  height: 50%;
+  padding: 10px;
+}
+
+textarea {
+  border-radius: 10px;
+  padding: 40px;
+  border: none;
+  outline: none;
+}
+
+input {
+  border: none;
+  outline: none;
+}
+
+input[type="submit"] {
+  background-color: #527df1;
+  padding: 10px;
+  display: block;
+  line-height: 1.2em;
+  text-decoration: none;
+  color: #000;
+  border-radius: 10px;
+}
+
+input[type="submit"]:hover {
+  background-color: #be6805;
+  border-radius: 5px;
+  color: #fff;
+}
+
+textarea {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #000;
+}
